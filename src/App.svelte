@@ -31,15 +31,8 @@
 
 	main {
 		text-align: center;
-		max-width: 240px;
 		margin: 0 auto;
 		color: white;
 		padding: 0;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
 	}
 </style>

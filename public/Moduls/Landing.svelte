@@ -49,21 +49,21 @@
                 class={current === "box" ? "selection-btn" : "unselected"}
                 on:click={() => switchExplanation(0)}
             >
-                <h3>Box breathing</h3>
+                <h2>Box breathing</h2>
             </button>
             <hr />
             <button
                 class={current === "equal" ? "selection-btn" : "unselected"}
                 on:click={() => switchExplanation(1)}
             >
-                <h3>Equal breathing</h3>
+                <h2>Equal breathing</h2>
             </button>
         </div>
 
         <div class="explanation-container">
             {#if explain}
                 <section class="explanation" in:fade>
-                    <h3>Box breathing</h3>
+                    <h2>Box breathing</h2>
                     <pre>
             Is a breathing pattern that can help to reduce stress or enhance focus by calming the mind and nervous system.
 
@@ -74,7 +74,7 @@
                 </section>
             {:else}
                 <section class="explanation" in:fade>
-                    <h3>Equal breathing</h3>
+                    <h2>Equal breathing</h2>
                     <pre>
                         Is a breathing pattern that has the same set count during the in- and exhale.
                         For example 4-4.
@@ -161,6 +161,7 @@
         border-width: 3px;
         border-radius: 8px;
         width: 90px;
+        font-size: 1.15em;
     }
 
     #jumpto-btn:hover {
@@ -175,17 +176,28 @@
         max-width: 130px;
     }
 
-    @media (max-width: 600px) {
-        main {
-            max-width: 100%;
+    @media only screen and (max-width: 600px) {
+        h2 {
+            margin: 0.1em;
+        }
+
+        #logo {
+            position: initial;
         }
 
         .landing-container {
-            display: flex;
             flex-direction: column;
             width: 100%;
             height: 100vh;
-            justify-content: center;
+            align-items: center;
+        }
+
+        .selection-btn {
+            width: 85%;
+        }
+
+        .unselected {
+            width: 85%;
         }
 
         .selection {
@@ -195,6 +207,18 @@
             justify-content: center;
             align-items: center;
             font-size: 1.1rem;
+        }
+
+        .explanation-container {
+            width: 100%;
+        }
+
+        .explanation {
+            margin: 8%;
+        }
+
+        #jumpto-btn {
+            position: sticky;
         }
     }
 </style>
