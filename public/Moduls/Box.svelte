@@ -119,7 +119,7 @@
         <h2 id="round-display">Round: {round} / 3</h2>
         <img
             id="box"
-            src="/Rectangle.png"
+            src="./media/Rectangle.png"
             alt="Visualization of the box breathing pattern that animates depending on the status"
             style="height: {height}%"
         />

@@ -750,7 +750,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			h1 = element("h1");
-    			add_location(h1, file$3, 130, 12, 3730);
+    			add_location(h1, file$3, 130, 12, 3737);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h1, anchor);
@@ -806,9 +806,9 @@ var app = (function () {
     			i = element("i");
     			i.textContent = "play_arrow";
     			attr_dev(i, "class", "material-icons");
-    			add_location(i, file$3, 127, 16, 3636);
+    			add_location(i, file$3, 127, 16, 3643);
     			attr_dev(button, "id", "start-btn");
-    			add_location(button, file$3, 126, 12, 3555);
+    			add_location(button, file$3, 126, 12, 3562);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -917,7 +917,7 @@ var app = (function () {
     			attr_dev(h2, "id", "round-display");
     			add_location(h2, file$3, 118, 8, 3250);
     			attr_dev(img, "id", "box");
-    			if (!src_url_equal(img.src, img_src_value = "/Rectangle.png")) attr_dev(img, "src", img_src_value);
+    			if (!src_url_equal(img.src, img_src_value = "./media/Rectangle.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "Visualization of the box breathing pattern that animates depending on the status");
     			set_style(img, "height", /*height*/ ctx[3] + "%");
     			attr_dev(img, "class", "svelte-xftf7i");
