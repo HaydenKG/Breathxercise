@@ -1,0 +1,113 @@
+html,
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	color: #333;
+	margin: 0;
+	padding: 8px;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+	color: rgb(0, 100, 200);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0, 80, 160);
+}
+
+label {
+	display: block;
+}
+
+input,
+button,
+select,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	-webkit-padding: 0.4em 0;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #fff;
+	border-radius: 2px;
+}
+
+input:disabled {
+	color: #ccc;
+}
+
+button {
+	color: #333;
+	background-color: #f4f4f4;
+	outline: none;
+}
+
+button:disabled {
+	color: #999;
+}
+
+button:not(:disabled):active {
+	background-color: #ddd;
+}
+
+/*------ elements for box- and equal- breathing --------*/
+
+#home-btn {
+	color: white;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	background-color: unset;
+	border-width: 0;
+}
+
+#home-btn:hover {
+	color: steelblue;
+}
+
+#mute-btn {
+	color: white;
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	background-color: unset;
+	border-width: 0;
+}
+
+#mute-btn:hover {
+	color: steelblue;
+}
+
+#round-display {
+	position: absolute;
+	top: 10%;
+}
+
+#start-btn {
+	position: absolute;
+	color: white;
+	background-color: unset;
+	border-width: 0;
+	z-index: 1;
+	margin: 0;
+}
+
+#start-btn i {
+	font-size: 50px;
+}
+
+#start-btn:hover {
+	color: steelblue;
+}
