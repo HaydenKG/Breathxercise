@@ -1,3 +1,6 @@
+A webapp to guide you through breathing exercises (box- & equal-breathing).
+Made with Svelte.
+
 git subtree push --prefix public/ origin gh-pages  
 for publishing to gh-pages branch
 
